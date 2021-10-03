@@ -31,6 +31,12 @@ app.post("/new", (req, res) => {
   res.redirect("/");
 });
 
+app.get("/detalhes/:pokeNum", (req, res) => {
+  const poke = req.params.pokeNum
+  const pokemon = pokedex[poke]
+  res.render("detalhes", {pokemon});
+});
+
 app.listen(port, () =>
   console.log(`Servidor rodando em http://localhost:${port}`)
 );

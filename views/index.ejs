@@ -37,8 +37,8 @@
         <h1>Pokédex</h1>
     </header>
     <section id="pokedex">
-        <% pokedex.forEach(item => { %>
-            <a class="card" href="/details/0">
+        <% pokedex.forEach((item, poke) => { %>
+            <a class="card" href="/detalhes/<%= poke %>">
                 <img src="<%= item.imagem %>" alt>
                 <h2><%= item.nome %></h2>
                 <h4><%= item.tipo %></h4>
