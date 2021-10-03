@@ -26,6 +26,13 @@
             </li>
         </ul>
     </nav>
+
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+
     <header>
         <h1>Pokédex</h1>
     </header>
@@ -38,5 +45,7 @@
             </a>
         <% }) %> 
     </section>
+    
+    <script src="/js/script.js"></script>
 </body>
 </html>
