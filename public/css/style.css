@@ -10,6 +10,7 @@ body {
     rgba(25, 0, 252, 0.959) 0%,
     purple 100%
   );
+  background-repeat: no-repeat;
 }
 
 nav {
