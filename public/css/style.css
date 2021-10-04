@@ -194,12 +194,20 @@ section#cadastrar form button:hover {
 section#details {
   margin: 0 20rem 0 20rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 2rem;
   padding: 3rem;
   box-shadow: 0 0 1rem #00000060;
+}
+
+section#details div#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section#details div#infos p {
